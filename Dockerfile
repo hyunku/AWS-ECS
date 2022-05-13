@@ -11,7 +11,7 @@ RUN yum install git -y
 RUN git clone https://github.com/hyunku/AWS-ECS-test.git
 
 # install packages
-RUN pip install -r AWS-E-test/requirements.txt
+RUN pip install -r AWS-ECS-test/requirements.txt
 
 # git repository 의 lambda_function.py 를 Container 내부의 /var/task/ 로 이동
 RUN cp AWS-ECS-test/lambda_function.py /var/task/
